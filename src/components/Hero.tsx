@@ -19,7 +19,7 @@ export default function Hero() {
                 Architecture of Digital Success
               </p>
               
-              <h1 className="font-light text-black leading-[1.1] tracking-tighter uppercase flex flex-col gap-2">
+              <h1 className="font-light text-brand-brown leading-[1.1] tracking-tighter uppercase flex flex-col gap-2">
                 <span className="text-4xl sm:text-5xl lg:text-7xl block">Your Partner in</span>
                 <span className="text-xl sm:text-2xl lg:text-3xl block text-gray-400 font-normal">Growing Your Revenue</span>
               </h1>
@@ -33,7 +33,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 py-10 border-y border-gray-50">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-soft-bg flex items-center justify-center">
-                  <Briefcase className="w-4 h-4 text-black" />
+                  <Briefcase className="w-4 h-4 text-brand-orange" />
                 </div>
                 <div>
                    <p className="text-[18px] font-black leading-none">500+</p>
@@ -42,7 +42,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-soft-bg flex items-center justify-center">
-                  <Users className="w-4 h-4 text-black" />
+                  <Users className="w-4 h-4 text-brand-orange" />
                 </div>
                 <div>
                   <p className="text-[18px] font-black leading-none">100%</p>
@@ -61,7 +61,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Right Side - Refined Portrait */}
+          {/* Right Side - Refined Tech Workspace */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -70,9 +70,9 @@ export default function Hero() {
           >
             <div className="relative aspect-[4/5] sm:aspect-[4/5.5] overflow-hidden rounded-[2rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.2)]">
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200" 
-                alt="Director" 
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-1000"
+                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200" 
+                alt="Professional Design Studio" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 grayscale-[20%]"
                 referrerPolicy="no-referrer"
               />
               
@@ -80,17 +80,18 @@ export default function Hero() {
               <div className="absolute bottom-6 right-6 left-6 glass rounded-2xl p-6 lg:p-10 space-y-4 lg:space-y-6">
                 <div className="flex justify-between items-start">
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-black tracking-tight">DRIM 21</h3>
-                    <p className="text-gray-500 text-[10px] uppercase font-bold tracking-widest">Business Designer</p>
+                    <p className="text-brand-orange text-[10px] uppercase font-black tracking-widest mb-1">Expertise</p>
+                    <h3 className="text-xl lg:text-2xl font-black tracking-tight uppercase">High-End Development</h3>
                   </div>
-                  <div className="flex gap-4">
-                    <Instagram className="w-4 h-4 opacity-50 hover:opacity-100 cursor-pointer" />
-                    <Linkedin className="w-4 h-4 opacity-50 hover:opacity-100 cursor-pointer" />
+                  <div className="hidden sm:flex gap-4">
+                    <div className="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center">
+                       <span className="text-[10px] font-black">21</span>
+                    </div>
                   </div>
                 </div>
-                <p className="text-gray-500 text-[12px] leading-relaxed font-medium">
-                  성공적인 비즈니스는 명확한 디지털 레이아웃에서 시작됩니다. 
-                  우리는 그 시작과 성장을 함께합니다.
+                <p className="text-gray-600 text-[12px] leading-relaxed font-medium">
+                  우리는 비즈니스의 격을 높이는 최상위 디지털 환경을 구축합니다. 
+                  기획부터 개발까지, 모든 과정에 건축적 정교함을 담습니다.
                 </p>
               </div>
             </div>
@@ -98,15 +99,36 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Decorative Full Width Element */}
-      <div className="w-full h-[300px] lg:h-[500px] bg-soft-bg relative overflow-hidden">
-           <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2600" 
-              alt="Creative Space" 
-              className="w-full h-full object-cover opacity-30 grayscale"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-white via-white/50 to-transparent" />
+      {/* Featured Technologies / Partners Section */}
+      <div className="bg-white py-20 border-t border-gray-50">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 items-center opacity-40 hover:opacity-100 transition-opacity duration-500">
+             <div className="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all">
+                <span className="text-[10px] font-black uppercase tracking-widest text-brand-brown">React</span>
+                <div className="w-12 h-1 px-4 bg-gray-100 rounded-full" />
+             </div>
+             <div className="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all">
+                <span className="text-[10px] font-black uppercase tracking-widest text-brand-brown">TypeScript</span>
+                <div className="w-12 h-1 px-4 bg-gray-100 rounded-full" />
+             </div>
+             <div className="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all">
+                <span className="text-[10px] font-black uppercase tracking-widest text-brand-brown">Framer</span>
+                <div className="w-12 h-1 px-4 bg-gray-100 rounded-full" />
+             </div>
+             <div className="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all">
+                <span className="text-[10px] font-black uppercase tracking-widest text-brand-brown">Tailwind</span>
+                <div className="w-12 h-1 px-4 bg-gray-100 rounded-full" />
+             </div>
+             <div className="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all">
+                <span className="text-[10px] font-black uppercase tracking-widest text-brand-brown">Firebase</span>
+                <div className="w-12 h-1 px-4 bg-gray-100 rounded-full" />
+             </div>
+             <div className="flex flex-col items-center gap-2 grayscale hover:grayscale-0 transition-all">
+                <span className="text-[10px] font-black uppercase tracking-widest text-brand-brown">Next.js</span>
+                <div className="w-12 h-1 px-4 bg-gray-100 rounded-full" />
+             </div>
+          </div>
+        </div>
       </div>
     </section>
   );

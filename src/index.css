@@ -7,10 +7,11 @@
   --font-mono: "JetBrains Mono", monospace;
   
   --color-brand-orange: #FF5F1F;
-  --color-primary: #121212;
-  --color-secondary: #707070;
-  --color-accent: #000000;
-  --color-soft-bg: #F9F9F9;
+  --color-brand-brown: #3D2B1F;
+  --color-primary: #3D2B1F;
+  --color-secondary: #8B4513;
+  --color-accent: #FF5F1F;
+  --color-soft-bg: #FCF8F5;
 }
 
 @layer base {

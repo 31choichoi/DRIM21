@@ -24,11 +24,11 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-4' : 'py-8'}`}>
-      <div className={`max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-14 transition-all duration-500 ${scrolled ? 'glass rounded-full shadow-lg h-20' : ''}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-4' : 'py-6 md:py-8'}`}>
+      <div className={`max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between transition-all duration-500 ${scrolled ? 'glass rounded-full shadow-lg h-20' : 'bg-white/80 backdrop-blur-sm md:bg-transparent border-b border-gray-100 md:border-none h-16 md:h-14'}`}>
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex items-center gap-1 font-black text-xl tracking-tighter uppercase text-black">
-            <span className="bg-black text-white px-1 ml-4 sm:ml-0">D</span>
+          <div className="flex items-center gap-1 font-black text-xl tracking-tighter uppercase text-brand-brown">
+            <span className="bg-brand-orange text-white px-1">D</span>
             <span className={scrolled ? 'block' : 'hidden sm:block'}>DRIM 21</span>
           </div>
         </Link>
@@ -58,10 +58,11 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <button 
-            className="md:hidden p-2 text-black mr-4"
+            className="md:hidden p-2 text-brand-brown"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle Menu"
           >
-            {isOpen ? <X /> : <Menu />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </div>
@@ -86,7 +87,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-4xl font-black uppercase tracking-tighter text-black hover:text-brand-orange transition-colors"
+                className="text-4xl font-black uppercase tracking-tighter text-brand-brown hover:text-brand-orange transition-colors"
               >
                 {link.name}
               </a>
@@ -95,7 +96,7 @@ export default function Navbar() {
               <a 
                 href="/#contact"
                 onClick={() => setIsOpen(false)}
-                className="w-full inline-block text-center py-5 bg-black text-white text-sm font-black uppercase tracking-widest"
+                className="w-full inline-block text-center py-5 bg-brand-orange text-white text-sm font-black uppercase tracking-widest"
               >
                 Get Started
               </a>

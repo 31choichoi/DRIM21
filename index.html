@@ -4,6 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Google AI Studio App</title>
+    <script>
+      /**
+       * Polyfill/Fix for environments where window.fetch is a read-only getter.
+       * This prevents "TypeError: Cannot set property fetch of #<Window> which has only a getter"
+       */
+      (function() {
+        if (typeof window === 'undefined') return;
+        
+        try {
+          const originalFetch = window.fetch;
+          if (!originalFetch) return;
+
+          // Attempt to redefine the property to be writable.
+          // This succeeds if the property is configurable.
+          Object.defineProperty(window, 'fetch', {
+            value: originalFetch,
+            writable: true,
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // If the above fails, it's non-configurable.
+          // We can try to define a setter that doesn't throw.
+          try {
+            const originalFetch = window.fetch;
+            Object.defineProperty(window, 'fetch', {
+              get: function() { return originalFetch; },
+              set: function() { /* ignore */ },
+              configurable: false // Keep it as it was if we can't change configurability
+            });
+          } catch (e2) {
+             // If this also fails, we are in a truly locked environment.
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

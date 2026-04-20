@@ -44,7 +44,7 @@ export default function FloatingActions() {
       
       <a
         href="/#contact"
-        className="w-14 h-14 bg-black text-white flex items-center justify-center shadow-2xl hover:bg-gray-800 transition-all rounded-full"
+        className="w-14 h-14 bg-brand-orange text-white flex items-center justify-center shadow-2xl hover:bg-brand-brown transition-all rounded-full"
       >
         <MessageSquare className="w-6 h-6" />
       </a>
@@ -58,14 +58,14 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-10">
         <div className="grid md:grid-cols-[1fr_1.5fr_1.5fr_1.5fr] gap-12 mb-20 items-start">
           {/* Logo Area */}
-          <div className="flex items-center gap-1 font-black text-lg tracking-tighter uppercase">
-            <span className="bg-black text-white px-1">D</span>
+          <div className="flex items-center gap-1 font-black text-lg tracking-tighter uppercase text-brand-brown">
+            <span className="bg-brand-orange text-white px-1">D</span>
             <span>DRIM 21</span>
           </div>
 
           {/* Contact Details */}
           <div className="space-y-6">
-            <h4 className="text-[13px] font-bold text-black uppercase tracking-widest font-sans">Contact Details</h4>
+            <h4 className="text-[13px] font-bold text-brand-brown uppercase tracking-widest font-sans">Contact Details</h4>
             <div className="space-y-4 text-[13px] text-gray-500 leading-relaxed font-sans font-medium">
               <p>DRIM 21 Inc.</p>
               <p>연락처:<br />02-1234-5678</p>
@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Get In Touch */}
           <div className="space-y-6">
-            <h4 className="text-[13px] font-bold text-black uppercase tracking-widest font-sans">Get In Touch</h4>
+            <h4 className="text-[13px] font-bold text-brand-brown uppercase tracking-widest font-sans">Get In Touch</h4>
             <p className="text-[13px] text-gray-500 leading-relaxed font-sans font-medium">
                우리는 당신의 비전을 현실로 만듭니다. 
                세상에 하나뿐인 브랜드 경험을 지금 바로 디자인하세요. 
@@ -85,7 +85,7 @@ export function Footer() {
 
           {/* My Location */}
           <div className="space-y-6">
-            <h4 className="text-[13px] font-bold text-black uppercase tracking-widest font-sans">My Location</h4>
+            <h4 className="text-[13px] font-bold text-brand-brown uppercase tracking-widest font-sans">My Location</h4>
             <p className="text-[13px] text-gray-500 leading-relaxed font-sans font-medium">
               서울특별시 강남구 테헤란로 123<br />
               DRIM 21 빌딩, 10층

@@ -36,13 +36,23 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
-            <a 
-              key={link.name}
-              href={link.href}
-              className="text-[11px] font-bold uppercase tracking-widest text-gray-500 hover:text-black transition-colors"
-            >
-              {link.name}
-            </a>
+            link.href.startsWith('/#') || link.href === '/' ? (
+              <a 
+                key={link.name}
+                href={link.href}
+                className="text-[11px] font-bold uppercase tracking-widest text-gray-500 hover:text-black transition-colors"
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link 
+                key={link.name}
+                to={link.href}
+                className="text-[11px] font-bold uppercase tracking-widest text-gray-500 hover:text-black transition-colors"
+              >
+                {link.name}
+              </Link>
+            )
           ))}
         </div>
 
@@ -83,14 +93,25 @@ export default function Navbar() {
               <X size={32} />
             </button>
             {navLinks.map((link) => (
-              <a 
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-4xl font-black uppercase tracking-tighter text-brand-brown hover:text-brand-orange transition-colors"
-              >
-                {link.name}
-              </a>
+              link.href.startsWith('/#') || link.href === '/' ? (
+                <a 
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-4xl font-black uppercase tracking-tighter text-brand-brown hover:text-brand-orange transition-colors"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link 
+                  key={link.name}
+                  to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-4xl font-black uppercase tracking-tighter text-brand-brown hover:text-brand-orange transition-colors"
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
             <div className="mt-auto border-t border-gray-100 pt-10">
               <a 

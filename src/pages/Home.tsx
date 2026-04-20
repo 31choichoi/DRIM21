@@ -15,7 +15,7 @@ export default function Home() {
       <Services />
       <Review />
       
-      <section className="py-32 bg-white border-t border-gray-100">
+      <section id="contact" className="py-32 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-6 font-sans">Contact Inquiry</p>

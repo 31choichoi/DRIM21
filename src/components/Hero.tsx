@@ -66,7 +66,7 @@ export default function Hero() {
 
             <div className="pt-8">
               <a 
-                href="/#portfolio"
+                href="/portfolio"
                 className="group inline-flex items-center gap-6 px-12 py-5 bg-black text-white text-[12px] font-black uppercase tracking-[0.3em] hover:bg-brand-brown transition-all shadow-2xl rounded-full"
               >
                 Explore Works <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
@@ -117,13 +117,6 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Signature Vertical Rail Text */}
-      <div className="absolute left-10 bottom-20 hidden xl:flex flex-col gap-10 items-center opacity-20 pointer-events-none">
-          <span className="writing-vertical-rl text-[11px] font-black uppercase tracking-[0.8em] text-brand-brown">
-             DESIGN FOR CONVERSION — STRATEGIC GROWTH
-          </span>
-          <div className="w-[1px] h-32 bg-brand-brown" />
-      </div>
     </section>
   );
 }

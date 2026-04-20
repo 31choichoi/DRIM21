@@ -66,13 +66,13 @@ export default function Review() {
       </div>
 
       {/* Highlight Section - Full Width Orange */}
-      <div className="mt-32 py-24 bg-[#FF5F1F] text-white overflow-hidden relative">
-          <div className="max-w-7xl mx-auto px-10 relative z-10 grid lg:grid-cols-[1.5fr_1fr] gap-12 items-center">
+      <div className="mt-32 py-20 lg:py-24 bg-brand-orange text-white overflow-hidden relative">
+          <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10 grid lg:grid-cols-[1.5fr_1fr] gap-12 items-center">
               <div className="space-y-6">
-                  <h3 className="text-2xl md:text-3xl font-black tracking-tight leading-tight">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight leading-tight text-balance">
                       "디자인을 넘어 성과를 설계하는 <br className="hidden md:block" /> 유일한 파트너입니다."
                   </h3>
-                  <p className="text-white/80 text-sm max-w-lg font-medium font-sans">
+                  <p className="text-white/80 text-sm max-w-lg font-medium font-sans text-balance">
                       DRIM 21과 함께한 수많은 고객분들이 매출 성장과 브랜드 가치 상승을 경험하고 있습니다. 
                       당신의 비즈니스도 그 다음 성공 스토리가 될 수 있습니다.
                   </p>
@@ -80,14 +80,14 @@ export default function Review() {
               <div className="text-center lg:text-right">
                   <a 
                     href="/#contact"
-                    className="inline-block px-12 py-5 bg-white text-black text-[12px] font-black uppercase tracking-[0.2em] hover:bg-gray-100 transition-all shadow-xl"
+                    className="inline-block px-12 py-5 bg-white text-black text-[12px] font-black uppercase tracking-[0.2em] hover:bg-gray-100 transition-all shadow-xl rounded-full"
                   >
                       시작하기
                   </a>
               </div>
           </div>
           {/* Background Accent */}
-          <div className="absolute top-0 right-0 w-1/3 h-full">
+          <div className="absolute top-0 right-0 w-1/3 h-full hidden sm:block">
               <div className="w-full h-full opacity-10 flex flex-col justify-center items-end pr-10">
                   <span className="text-[200px] font-black leading-none pointer-events-none">21</span>
               </div>

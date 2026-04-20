@@ -26,13 +26,13 @@ export default function Hero() {
                 </p>
               </div>
               
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-brand-brown leading-[1] tracking-tighter uppercase relative">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight text-brand-brown leading-[1.05] tracking-tighter uppercase relative">
                 Focused on <br />
                 <span className="font-serif italic font-normal text-brand-orange ml-8 lg:ml-16">Revenue</span> <br />
                 Growth.
               </h1>
               
-              <p className="text-gray-500 text-lg lg:text-xl font-medium max-w-lg leading-relaxed pt-4">
+              <p className="text-gray-500 text-base md:text-lg lg:text-xl font-medium max-w-lg leading-relaxed pt-4">
                 홈페이지의 본질은 <span className="text-brand-brown underline decoration-brand-orange/30 underline-offset-8">매출 향상</span>에 있습니다. 
                 단순한 미학을 넘어 고객의 성장을 증명하는 최고의 디지털 아키텍처를 경험하세요.
               </p>
@@ -80,7 +80,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, ease: "easeOut" }}
-              className="relative aspect-[3/4] overflow-hidden rounded-[4rem] shadow-[-20px_40px_80px_-20px_rgba(61,43,31,0.15)] bg-soft-bg"
+              className="relative aspect-[3/4] overflow-hidden rounded-[3rem] shadow-[-20px_40px_80px_-20px_rgba(61,43,31,0.15)] bg-soft-bg"
             >
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" 

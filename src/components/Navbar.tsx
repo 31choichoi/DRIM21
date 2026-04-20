@@ -29,7 +29,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-2">
           <div className="flex items-center gap-1 font-black text-xl tracking-tighter uppercase text-brand-brown">
             <span className="bg-brand-orange text-white px-1">D</span>
-            <span className={scrolled ? 'block' : 'hidden sm:block'}>DRIM 21</span>
+            <span>DRIM 21</span>
           </div>
         </Link>
 

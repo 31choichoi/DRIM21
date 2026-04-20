@@ -18,10 +18,10 @@ export default function About() {
   return (
     <section id="about" className="py-24 bg-white overflow-hidden border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-10">
-        <div className="grid lg:grid-cols-[1.2fr_1fr] gap-24 items-center">
+        <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-24 items-center">
           {/* Left Side - Image */}
-          <div className="relative lg:order-1">
-            <div className="aspect-square bg-white overflow-hidden shadow-2xl">
+          <div className="relative lg:order-1 max-w-sm mx-auto w-full">
+            <div className="aspect-[3/4] bg-white overflow-hidden shadow-2xl rounded-[3rem]">
                 <img 
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" 
                     alt="Web Design Strategy" 

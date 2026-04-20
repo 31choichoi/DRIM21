@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "inquiry": {
+      "title": "Contact Inquiry",
+      "description": "Form submission from potential clients",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Name or company name" },
+        "phone": { "type": "string", "description": "Contact number" },
+        "purpose": { "type": "string", "enum": ["new", "renewal"], "description": "Purpose of creation" },
+        "referenceUrl": { "type": "string", "description": "Reference website URL" },
+        "budget": { "type": "string", "description": "Estimated budget range" },
+        "content": { "type": "string", "description": "Detailed inquiry content" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Submission timestamp" }
+      },
+      "required": ["name", "phone", "purpose", "budget", "content", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/inquiries/{inquiryId}": {
+      "schema": "inquiry",
+      "description": "Collection of client inquiries"
+    }
+  }
+}
